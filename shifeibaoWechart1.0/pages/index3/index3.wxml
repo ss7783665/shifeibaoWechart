@@ -1,0 +1,49 @@
+<!--pages/index3/index3.wxml-->
+
+<view>
+
+hello   // {{msg}}
+<view style="background-color:yellow; color:{{mycolor}}">num:{{num}}</view>
+
+<view class="{{myclass}}">isboy:{{isboy}}</view>
+
+
+<view>person.name:{{person.name}}-- person.height:{{person.height}}</view>
+
+<view><checkbox checked = "{{false}}">   </checkbox>  </view>
+
+<!--10.列表渲染l-->
+<view wx:for="{{arr}}" wx:key="{{index}}">   
+  {{index}}:{{item}}
+</view>
+ <view wx:for="{{person}}" wx:key="{{index}}" wx:for-index="key">   
+  {{key}}:{{item}}
+</view> 
+<block wx:for="{{arr}}" wx:key="{{index}}">   
+  {{index}}:{{item}}
+</block>
+
+
+<view class="box1" hover-class="hoverclass">  aaa </view>
+
+
+<text selectable>index9 text </text>
+<text decode>空&nbsp;格</text>
+
+<view>
+<!--image标签是web中img标签和背景图片的结合体 320*240  -->
+<image src="../../TabBar/picture111.png" mode="aspectFill"></image>
+</view>
+
+<!--轮播图 -->
+<swiper autoplay indicator-dots indicator-color="blue" indicator-active-color="red" circular interval = "1000">
+<swiper-item><image src="../../TabBar/lunbo_0.png" mode="widthFix"> </image></swiper-item>
+<swiper-item><image src="../../TabBar/lunbo_1.png" mode="widthFix"> </image></swiper-item>
+<swiper-item><image src="../../TabBar/lunbo_2.png" mode="widthFix"> </image></swiper-item>
+</swiper>
+
+<view>
+<text selectable>index10 text </text>
+</view>
+
+</view>

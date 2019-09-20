@@ -1,0 +1,11 @@
+<!--pages/index1/index1.wxml-->
+<text>pages/index1/index1.wxml</text>
+
+<view> 
+<!--轮播图 -->
+<swiper autoplay indicator-dots indicator-color="blue" indicator-active-color="red" circular interval = "1000">
+<swiper-item><image src="../../TabBar/lunbo_0.png" mode="widthFix"> </image></swiper-item>
+<swiper-item><image src="../../TabBar/lunbo_1.png" mode="widthFix"> </image></swiper-item>
+<swiper-item><image src="../../TabBar/lunbo_2.png" mode="widthFix"> </image></swiper-item>
+</swiper>
+</view>

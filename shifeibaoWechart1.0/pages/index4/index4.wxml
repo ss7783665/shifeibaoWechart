@@ -1,0 +1,16 @@
+<!--pages/index4/index4.wxml-->
+
+<view>
+
+
+<!--轮播图 -->
+<swiper autoplay indicator-dots indicator-color="blue" indicator-active-color="red" circular interval = "1000">
+<swiper-item><image src="../../TabBar/lunbo_0.png" mode="widthFix"> </image></swiper-item>
+<swiper-item><image src="../../TabBar/lunbo_1.png" mode="widthFix"> </image></swiper-item>
+<swiper-item><image src="../../TabBar/lunbo_2.png" mode="widthFix"> </image></swiper-item>
+</swiper>
+
+<!--保留当前页面,跳转到应用内某个页面,但是不能跳转到Tabar页面-->
+<navigator url="../index3/index3" open-type="navigate"> 调转 </navigator>
+
+</view>
